@@ -1,7 +1,12 @@
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
+    if (screen.width>700){
     document.getElementById("mySidenav").style.width = "250px";
+    } else{
+        document.getElementById("mySidenav").style.width="45vw";
+    }
+
   }
   
   /* Set the width of the side navigation to 0 */
@@ -14,6 +19,10 @@ function stopanimation(){
 }
 function retryanimation(){
     document.getElementById('isard').style.animationPlayState="initial";
+}
+
+function opencode(){
+    document.getElementById('code').style.color= black;
 }
 
 const jsisard =document.getElementsByClassName('isard');
