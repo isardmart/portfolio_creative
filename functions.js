@@ -22,9 +22,11 @@ function retryanimation(){
 }
 
 function opencode(){
-    document.getElementById('code').style.color= black;
+    location.replace('./pages/code.html')
 }
-
+function opengithub(){
+    location.replace('https://github.com/isardmart/portfolio')
+}
 const jsisard =document.getElementsByClassName('isard');
 
 

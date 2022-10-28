@@ -9,12 +9,13 @@ body{
     width: 100vw;
     font-weight: 300;
 }
-    #woods-img{
-        min-height: 100vh;
-        min-width:100vw;
-        max-height: 110vh;
+    .woods-img{
+        height:100vh;
         width: 100vw;
-        background-size:contain;
+        background-image: url(./images/main.jpeg);
+        background-position: 50%;
+        background-size: cover;
+        background-color: rgb(0,0,0);
     } 
     #nav-bar {
         background: linear-gradient(to right,rgba(0,0, 0, 0.9),rgba(0,0, 0, 0.5),rgba(255,255,255,0.9));
@@ -54,9 +55,7 @@ body{
         top: 48vh;
         left:48vw;
         background-color: transparent;
-        color: transparent;
         border: none;
-        font-size: 20px;
         animation-duration: 10s;
         animation-iteration-count: infinite;
         animation-delay: 1s;
@@ -80,16 +79,9 @@ body{
             color: white;
             background-image: url(./images/lightning-chamois.png);
             opacity: 30;
-            background-size: cover;
-            width: 200px;
-            height: 200px;
-
         }
-        .isard:active{
+        .isard:active,#isard-trip:active{
             opacity: 0.75;
-            background-size: cover;
-            width: 200px;
-            height: 200px;
         }
 #magic{
     position: absolute;
@@ -151,12 +143,47 @@ body{
     transition: margin-left .5s;
     padding: 20px;
   }
-  
+#woods-trip{
+    animation-duration: 100s;
+    animation-name: trippy;
+}
+@keyframes trippy {
+    0% ,100%  { background-image: url('./images/main.jpeg');}
+    0.5%  {background-image: url('./images/psico2-100.jpeg');}
+}
+#isard-trip{
+    animation-name: trippisard;
+    animation-duration: 10000s;
+    background-image: url(./images/chamois.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    position:absolute;
+    top: 48vh;
+    left:48vw;
+    background-color: transparent;
+    border: none;
+    background-position: center;
+}
+#name{
+    font-size: 20px;
+}
+.github-container{
+    position:absolute;
+    
+}
+#github{
+    
+}
+@keyframes trippisard{
+    100% {background-image:url('./images/chamois.png') ;}
+    0.5% {background-image: url('./images/isard-trip-tt.png');}
+}
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-  }
+}
 @media all and (max-width:700px) {
     .main-block{
         height:100vh;
@@ -165,6 +192,10 @@ body{
     #woods-img{
         height:100%;
         object-fit:cover;
+    }
+    #cwoods-img{
+        background-size:cover ;
+        background-position: 50%;
     }
     #nav-bar {
         display: grid;
@@ -189,5 +220,9 @@ body{
     #woods-img{
         height:100vh;
         object-fit: cover;
+    }
+    #cwoods-img{
+        background-size: cover;
+        background-position: 50%;
     }
 }
