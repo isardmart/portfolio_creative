@@ -36,7 +36,7 @@ body{
         padding-right:50px ;
         list-style: none;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         
     }
         .social {
@@ -148,13 +148,13 @@ body{
     animation-name: trippy;
 }
 @keyframes trippy {
-    0% ,100%  { background-image: url('./images/main.jpeg');}
-    0.5%  {background-image: url('./images/psico2-100.jpeg');}
+    100%  { background-image: url('./images/main.jpeg');}
+    50%  {background-image: url('./images/psico2-100.jpeg');}
 }
 #isard-trip{
     animation-name: trippisard;
-    animation-duration: 10000s;
-    background-image: url(./images/chamois.png);
+    animation-duration: 100s;
+    background-image: url(./images/isard-trip-tt.png);
     background-size: cover;
     width: 200px;
     height: 200px;
@@ -164,6 +164,11 @@ body{
     background-color: transparent;
     border: none;
     background-position: center;
+    animation-delay: -2s;
+}
+@keyframes trippisard{
+    0% {background-image:url('./images/chamois.png') ;}
+    100% {background-image: url('./images/isard-trip-tt.png');}
 }
 #name{
     font-size: 20px;
@@ -181,10 +186,7 @@ body{
     width: 100px;
     height:100px;
 }
-@keyframes trippisard{
-    100% {background-image:url('./images/chamois.png') ;}
-    0.5% {background-image: url('./images/isard-trip-tt.png');}
-}
+
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
