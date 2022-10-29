@@ -28,7 +28,6 @@
 </head>
 <body>
     <header class="main-block">
-        <div class="woods-img"></div>
         <nav id="nav-bar">
             <a style="text-decoration:none;color:white;" href="./index.html"><p>Antoni Galí</p></a>
             <ul>
@@ -36,12 +35,6 @@
                 <li><a href="https://www.softwarexperts.org/"><img class="social" src="./icons/se.png" alt="se"> </a></li>
             </ul>
         </nav>
-        <div >
-            <button type="submit" class="isard bounce" id="isard" onclick="openNav();stopanimation()"></button>
-        </div>
-        <div>
-            <button type="submit" id="magic" onclick="opencode()"><code id="code">HERE IT IS THE CODE:</code></button>
-        </div>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav();retryanimation();">&times;</a>
             <a href="./pages/background.html">Background</a>
@@ -55,6 +48,15 @@
             -->
           </div>
     </header>
+    <main class="main-block">
+        <div class="woods-img"></div>
+        <div >
+            <button type="submit" class="isard bounce" id="isard" onclick="openNav();stopanimation()"></button>
+        </div>
+        <div>
+            <button type="submit" id="magic" onclick="opencode()"><code id="code">HERE IT IS THE CODE:</code></button>
+        </div>
+    </main>
     <script src="./functions.js"></script>
 </body>
 </html>
