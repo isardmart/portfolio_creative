@@ -180,8 +180,6 @@ body{
 #github{
     width: 100px;
     height:100px;
-    background-size: cover;
-    background-image: url('./images/github.PNG');
 }
 @keyframes trippisard{
     100% {background-image:url('./images/chamois.png') ;}

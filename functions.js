@@ -24,9 +24,6 @@ function retryanimation(){
 function opencode(){
     location.replace('./pages/code.html')
 }
-function opengithub(){
-    location.replace('https://github.com/isardmart/portfolio')
-}
 const jsisard =document.getElementsByClassName('isard');
 
 
