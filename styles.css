@@ -19,8 +19,6 @@ body{
     }
     .background{
         background-image:url('./images/lake.jpeg');
-        justify-content: space-evenly;
-        text-align: center;
     }
     .contact{
         background-image: url('./images/snowy.jpeg');
@@ -31,12 +29,11 @@ body{
 
 header{
     width:100vw;
-    position: absolute;
 }
     #nav-bar {
         background: linear-gradient(to right,rgba(0,0, 0, 0.9),rgba(0,0, 0, 0.5),rgba(255,255,255,0.9)) !important;
         color: white;
-        position:sticky;
+        position:fixed;
         top:0%;
         align-items: center;
         height:12vh;
@@ -47,22 +44,20 @@ header{
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    #nav-bar p:hover {
+        color: rgba(135, 211, 255, 1);
+    }
     #nav-bar p{
         padding-left: 50px;
         font-weight: 500;
         font-size: 3vh;
         margin-left: 1vw;
-        position: relative;
-        
     }
     #nav-bar ul {
         padding-right:50px ;
         list-style: none;
         display: flex;
         justify-content: space-between;
-        position: relative;
-        
-        
     }
         .social {
             text-decoration: none;
@@ -89,16 +84,26 @@ header{
     .back-it{
         margin-top: 12vh;
         padding-top: 20px;
-        
+        padding-bottom: 100px;
+        text-align: center;
+        width: 100vw;
     }
     .items{
         top:12vh;
         margin-top: 20px;
         left:50%;
-        display: grid;
+        display: inline-grid;
         grid-template-columns: 1fr;
         grid-gap: 100px;
         margin-top: 30px;
+        
+    }
+    .items div{
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        margin: auto;
+        padding: 20px;
+        
     }
     .isard{
         background-image: url(./images/chamois.png);
@@ -171,7 +176,7 @@ header{
     z-index: 1; /* Stay on top */
     top: 12vh; /* Stay at the top */
     left: 0;
-    background-color: rgba(0,0, 0, 0.5); /* Black*/
+    background-color: rgba(0, 0, 0, 0.5); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -183,14 +188,14 @@ header{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: rgba(255,255,255,0.8);
     display: block;
     transition: 0.3s;
   }
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: rgb(139, 218, 255);
   }
   
   /* Position and style the close button (top right corner) */
