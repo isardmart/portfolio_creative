@@ -21,13 +21,11 @@ function retryanimation(){
     document.getElementById('isard').style.animationPlayState="initial";
 }
 
-function opencode(){
-    location.replace('./pages/code.html')
-}
+/*
 const jsisard =document.getElementsByClassName('isard');
 
 
-/*
+
 function sendata (name, surname, email, company, proposal) {
     return (name, surname,email, company, proposal);
 }

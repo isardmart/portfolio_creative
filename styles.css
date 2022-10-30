@@ -23,14 +23,20 @@ body{
         position:absolute;
         top:0%;
         align-items: center;
+        height:12vh;
         width: 100%;
         display: flex;
         justify-content: space-between;
+        font-size: x-large;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     #nav-bar p{
         padding-left: 50px;
         font-weight: 500;
-        font-size: x-large;
+        font-size: 3vh;
+        margin-left: 1vw;
+        position: relative;
         
     }
     #nav-bar ul {
@@ -38,6 +44,7 @@ body{
         list-style: none;
         display: flex;
         justify-content: space-between;
+        position: relative;
         
         
     }
@@ -87,21 +94,28 @@ body{
             opacity: 0.75;
         }
 #magic{
-    position: absolute;
+    position: fixed;
     top:85vh;
-    left:25vw;
-    height: 100px;
-    width: 100px;
-    background-color: transparent;
-    border: transparent;
+    left:5vw;
+    height: 10vh;
+    width: 10vw;
+    animation-duration: 10s;
+    animation-name: glow;
+    background-image: url('./images/glow-e3.png'),url('./images/glow.e1.png'),url('./images/glow-e2.png');
+    background-size: cover;
+    background-position: center;
+    animation-iteration-count: infinite;
 }
-#magic:hover{
-    background-image: url(./images/magicc.png);
-    background-size:cover;
+
+@keyframes glow{
+    0%,50%,100%{opacity: 0;}
+    30%,70%{opacity:1}
 }
-#code{
-    color:transparent;
-}
+    #magic:hover{
+        background-image: url('./images/magicc.png'),url('./images/glow-e3.png');
+        background-size:cover;
+    }
+
 
 /* The side navigation menu */
 .sidenav {
@@ -109,12 +123,13 @@ body{
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
-    top: 10vh; /* Stay at the top */
+    top: 12vh; /* Stay at the top */
     left: 0;
     background-color: rgba(0,0, 0, 0.5); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    margin-top: 20px;
   }
   
   /* The navigation menu links */
@@ -222,7 +237,12 @@ body{
         margin-top: 10px;
     }  
     .sidenav{
+        margin-top: 20px;
         top: 15vh;
+    }
+    #magic{
+        width: 100px;
+        height:100px;
     }
     
 }
