@@ -15,7 +15,7 @@ body{
     height: 100vh;
 }
     .index{
-        background-image: url(./images/main.jpeg);
+        background-image: url('./images/main.jpeg');
     }
     .background{
         background-image:url('./images/lake.jpeg');
@@ -24,7 +24,7 @@ body{
         background-image: url('./images/snowy.jpeg');
     }
     .services{
-        background-image: url('./images/prat.jpeg');
+        background-image: url('./images/ride.jpeg');
     }
 
 header{
